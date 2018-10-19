@@ -1,0 +1,14 @@
+ID,KIND,fname
+1,K001,poledata.csv
+2,K002,utilitypole.csv
+3,K003,roadsign.csv
+4,K004,signaldata.csv
+5,K005,streetlight.csv
+6,P001,whiteline.csv
+7,P002,stopline.csv
+8,P003,zebrazone.csv
+9,P004,crosswalk.csv
+10,P005,road_surface_mark.csv
+11,R001,roadedge.csv
+12,R002,gutter.csv
+13,R003,curb.csv

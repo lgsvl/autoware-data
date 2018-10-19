@@ -1,0 +1,48 @@
+<launch>
+
+  <!-- TF -->
+  <include file="$(env HOME)/shared_dir/autoware-data/data/tf/tf.launch"/>
+
+  <!-- Point Cloud -->
+  <!-- Note: this is generated from simulator -->
+  <node pkg="map_file" type="points_map_loader" name="points_map_loader" args="noupdate 
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00000.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00001.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00002.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00003.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00004.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00005.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00006.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00007.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00008.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00009.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00010.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00011.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00012.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00013.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00014.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00015.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00016.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00017.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00018.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00019.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00020.pcd
+   "
+  />
+
+  <!-- Vector Map -->
+  <node pkg="map_file" type="vector_map_loader" name="vector_map_loader" args="
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/lane.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/dtlane.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/point.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/line.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/pole.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/signaldata.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/stopline.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/vector.csv
+   $(env HOME)/shared_dir/autoware-data/data/map/vector_map_sim_sf_portion/whiteline.csv
+
+   " 
+  />
+
+</launch>

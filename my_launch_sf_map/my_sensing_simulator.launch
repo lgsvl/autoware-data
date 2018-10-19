@@ -1,0 +1,16 @@
+<launch>
+  <!-- ROS-Bridge node for Simulator connection -->
+  <node name="websocket_bridge" pkg="rosbridge_server" type="rosbridge_websocket" output="screen" clear_params="true" required="true" />
+
+  <!-- Re-publishing simulator/camera_node/image/compressed topic to /image_raw as expected by Autoware -->
+  <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/simulator/camera_node/image raw out:=/image_raw" />
+
+
+<!-- FIXME: this is to make a temporary hard-link TF between /gps (GPS coordinates fix) and /base_link (base of the car) if localization is failed (e.g. no lidar data)  -->
+  <node pkg="tf" type="static_transform_publisher" name="gps_to_base_link" args="0 0 0 0 0 0  /gps /base_link 10"/>
+
+
+  <!-- <node pkg="tf" type="static_transform_publisher" name="lidar_to_camera" args="0.029 -0.574 -1.820 4.712 0.009 -1.883 /velodyne /camera 10" /> -->
+
+</launch>
+
