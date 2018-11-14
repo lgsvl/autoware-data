@@ -48,6 +48,8 @@
 
   <!-- ssd -->
   <include file="$(find vision_ssd_detect)/launch/vision_ssd_detect.launch">
+    <!--<arg name="car" value="$(arg car_detection)" />-->
+    <!--<arg name="pedestrian" value="$(arg pedestrian_detection)" />-->
     <arg name="use_gpu" value="$(arg is_use_gpu)" />
     <arg name="score_threshold" default="0.8" />
     <arg name="network_definition_file" default="$(env HOME)/ssdcaffe/models/VGGNet/VOC0712Plus/SSD_512x512_ft/deploy.prototxt" />
