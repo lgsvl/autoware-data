@@ -10,10 +10,10 @@
   <include file="$(find astar_planner)/launch/velocity_set.launch"/>
 
   <!-- pure_pursuit -->
-  <node pkg="rostopic" type="rostopic" name="config_waypoint_follower_rostopic"
+  <!--node pkg="rostopic" type="rostopic" name="config_waypoint_follower_rostopic"
         args="pub -l /config/waypoint_follower autoware_msgs/ConfigWaypointFollower
         '{ header: auto, param_flag: 1, velocity: 14, lookahead_distance: 4.2, lookahead_ratio: 2.0, minimum_lookahead_distance: 6.0, displacement_threshold: 0.0, relative_angle_threshold: 0.0 }' "
-  />
+  /-->
   <include file="$(find waypoint_follower)/launch/pure_pursuit.launch"/>
 
   <!-- twist_filter -->
