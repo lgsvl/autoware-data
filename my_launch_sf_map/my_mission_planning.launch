@@ -31,6 +31,7 @@
   <!-- launch waypoint planner instead of hardcoded path -->
   <include file="$(find way_planner)/launch/way_planner.launch">
     <arg name="mapSource" value="$(arg map_source)"/>
+    <arg name="enableReplan" value="false"/>
   </include>
 
   <!-- trajectory_generator -->
