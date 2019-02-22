@@ -27,6 +27,33 @@
    $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00018.pcd
    $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00019.pcd
    $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00020.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00021.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00022.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00023.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00024.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00025.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00026.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00027.pcd
+	 $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00028.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00029.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00030.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00031.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00032.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00033.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00034.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00035.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00036.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00037.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00038.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00039.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00040.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00041.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00042.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00043.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00044.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00045.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_Environment_00046.pcd
+   $(env HOME)/shared_dir/autoware-data/data/map/pointcloud_map_sf_portion/DuckieSimulator_SF_ParkedCarHolder_00000.pcd
    "
   />
 
