@@ -1,4 +1,0 @@
-<launch>
-  <!-- Convert compress image to raw image -->
-  <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/simulator/camera_node/image raw out:=/image_raw" />
-</launch>
