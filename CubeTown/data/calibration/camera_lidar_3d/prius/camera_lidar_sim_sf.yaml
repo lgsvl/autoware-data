@@ -1,0 +1,25 @@
+%YAML:1.0
+---
+CameraExtrinsicMat: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [0.,  0.,  1., 0.1679201,
+          -1.,  0., 0., 0.,
+          0., -1., 0., -0.612,
+          0., 0., 0., 1.]
+CameraMat: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [1158.03362469927, 0., 960.,
+          0., 1158.03370796211, 540.,
+          0., 0., 1.]
+
+DistCoeff: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [0., 0., 0., 0., 0.]
+ImageSize: [ 1920, 1080 ]
+ReprojectionError: 0.

@@ -1,0 +1,26 @@
+<launch>
+
+  <!-- TF -->
+  <include file="$(env HOME)/shared_dir/autoware-data/CubeTown/data/tf/tf.launch"/>
+
+  <!-- Point Cloud -->
+  <!-- Note: this is generated from simulator -->
+  <node pkg="map_file" type="points_map_loader" name="points_map_loader" args="noupdate 
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/pointcloud_map/CubeTown.pcd"
+  />
+
+  <!-- Vector Map -->
+  <node pkg="map_file" type="vector_map_loader" name="vector_map_loader" args="
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/lane.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/dtlane.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/point.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/line.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/pole.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/signaldata.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/stopline.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/vector.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/whiteline.csv
+   $(env HOME)/shared_dir/autoware-data/CubeTown/data/map/vector_map/node.csv" 
+  />
+
+</launch>
