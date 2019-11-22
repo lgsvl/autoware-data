@@ -4,10 +4,10 @@
   <include file="$(find runtime_manager)/scripts/vehicle_socket.launch"/>
 
   <!-- obstacle_avoid -->
-  <include file="$(find astar_planner)/launch/obstacle_avoid.launch"/>
+  <include file="$(find waypoint_planner)/launch/astar_avoid.launch"/>
 
   <!-- velocity_set -->
-  <include file="$(find astar_planner)/launch/velocity_set.launch"/>
+  <include file="$(find waypoint_planner)/launch/velocity_set.launch"/>
 
   <!-- pure_pursuit -->
   <node pkg="rostopic" type="rostopic" name="config_waypoint_follower_rostopic"
