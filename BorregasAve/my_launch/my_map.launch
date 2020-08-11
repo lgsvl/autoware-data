@@ -5,9 +5,9 @@
 
   <!-- Point Cloud -->
   <!-- Note: this is generated from simulator -->
-  <node pkg="map_file" type="points_map_loader" name="points_map_loader" args="noupdate 
-   $(env HOME)/shared_dir/autoware-data/BorregasAve/data/map/pointcloud_map/BorregasAve.pcd"
-  />
+  <include file="$(find map_file)/launch/points_map_loader.launch">
+    <arg name="path_pcd" value="$(env HOME)/shared_dir/autoware-data/BorregasAve/data/map/pointcloud_map/BorregasAve.pcd" />
+  </include>
 
   <!-- Vector Map -->
   <node pkg="map_file" type="vector_map_loader" name="vector_map_loader" args="
