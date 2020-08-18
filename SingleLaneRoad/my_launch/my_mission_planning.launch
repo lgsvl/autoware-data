@@ -1,11 +1,7 @@
 <launch>
-
-  <!-- setting path parameter -->
-  <!-- <arg name="multi_lane_csv" default="$(env HOME)/shared_dir/autoware-data/SingleLaneRoad/data/path/saved_waypoints_long.csv" /> -->
   <arg name="map_source" default="0" /> <!-- Autoware=0, Vector Map Folder=1, kml file=2 -->
 
   <!-- waypoint_loader -->
-  
   <!-- <include file="$(find waypoint_maker)/launch/waypoint_loader.launch">
     <arg name="multi_lane_csv" value="$(arg multi_lane_csv)"/>
   </include> -->
@@ -17,16 +13,21 @@
   </include>
 
   <!-- trajectory_generator -->
-  <include file="$(find op_local_planner)/launch/op_trajectory_generator.launch">
+  <!-- <include file="$(find op_local_planner)/launch/op_trajectory_generator.launch"> -->
+  <!-- </include> -->
+
+  <!-- dp_planner -->
+  <include file="$(find dp_planner)/launch/dp_planner.launch">
+    <arg name="mapSource" value="$(arg map_source)"/>
   </include>
 
   <!-- lane_rule -->
-  <node pkg="lane_planner" type="lane_rule" name="lane_rule" />
+  <!-- <node pkg="lane_planner" type="lane_rule" name="lane_rule" /> -->
 
   <!-- lane_stop -->
-  <node pkg="lane_planner" type="lane_stop" name="lane_stop" />
+  <!-- <node pkg="lane_planner" type="lane_stop" name="lane_stop" /> -->
 
   <!-- lane_select -->
-  <node pkg="lane_planner" type="lane_select" name="lane_select" />
+  <!-- <node pkg="lane_planner" type="lane_select" name="lane_select" /> -->
 
 </launch>
