@@ -4,7 +4,15 @@ This repository contains additional data files and scripts needed to run Autowar
 
 It includes any data files such as point cloud maps, vector maps, and calibration files. It also contains launch scripts to bring up Autoware compatible with currently available environments in the simulator.
 
+## Requirements
+- Git LFS
 
+## Preparation
+```
+$ mkdir ${HOME}/shared_dir
+$ cd ${HOME}/shared_dir
+$ git clone https://github.com/lgsvl/autoware-data.git
+```
 
 # Copyright and License
 
